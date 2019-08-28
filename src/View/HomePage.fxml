@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="615.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="View.HomePageController">
+   <children>
+      <Text layoutX="228.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Brand name">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="33.0" layoutY="78.0" prefHeight="401.0" prefWidth="555.0" style="-fx-border-color: black;">
+         <children>
+            <AnchorPane layoutX="405.0" prefHeight="401.0" prefWidth="148.0">
+               <children>
+                  <Button layoutX="18.0" layoutY="30.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="113.0" text="Products">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="18.0" layoutY="123.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="113.0" text="Orders">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="18.0" layoutY="216.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="113.0" text="Profile">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="18.0" layoutY="307.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="113.0" text="Contact">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="401.0" prefWidth="402.0" style="-fx-border-color: black;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
