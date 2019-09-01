@@ -20,6 +20,7 @@ public class Brand {
     private int image_id;
     private String brand_name;
     private ObservableList<Product> products;
+    private ObservableList<Order> orders;
     public Brand(int brand_id , String username ,String password , int phone_id , String location , int image_id , String brand_name){
         this.brand_id=brand_id;
         this.username=username;
@@ -92,6 +93,14 @@ public class Brand {
 
     public void setProducts(ObservableList<Product> products) {
         this.products = products;
+    }
+
+    public ObservableList<Order> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(ObservableList<Order> orders) {
+        this.orders = orders;
     }
     
 }

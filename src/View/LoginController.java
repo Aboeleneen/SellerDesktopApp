@@ -5,9 +5,11 @@
  */
 package View;
 
+import Model.Brand;
 import Model.DBConnect;
 import java.io.IOException;
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -46,13 +48,19 @@ public class LoginController implements Initializable {
      * check login validation after click login button
      * @param event
      * @throws java.io.IOException
+     * @throws java.sql.SQLException
      */
     @FXML
-    public void login(ActionEvent event) throws IOException{
+    public void login(ActionEvent event) throws IOException, SQLException{
         if(check()){
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("HomePage.fxml"));
             Parent homeView = loader.load();
+           
+            // pass data to home page scene
+            HomePageController controller = loader.getController();
+            controller.initData(this.getBrand());
+                ;
             Scene scene = new Scene(homeView);
             Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
             window.setScene(scene);
@@ -65,11 +73,19 @@ public class LoginController implements Initializable {
     /**
      * call checkLogin function in database class
      */
-    private Boolean check(){
+    private Boolean check() throws SQLException{
         DBConnect db = DBConnect.getInstance();
         String user = this.username.getText();
         String pass = this.password.getText();
         return db.checkLogin(user, pass);
+    }
+    
+    /**
+     * get brand object of current admin
+     */
+    private Brand getBrand() throws SQLException{
+        DBConnect db = DBConnect.getInstance();
+        return db.getBrand(this.username.getText(), this.password.getText());
     }
     
 }

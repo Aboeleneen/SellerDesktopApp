@@ -59,6 +59,11 @@ public class HomePageController implements Initializable {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("Products.fxml"));
         Parent productsView = loader.load();
+        
+        // pass data to products scene
+        ProductsController controller = loader.getController();
+        controller.initData(this.selectedBrand);
+        
         Scene scene = new Scene(productsView);
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(scene);

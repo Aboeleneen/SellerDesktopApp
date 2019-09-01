@@ -40,7 +40,7 @@
                   </Button>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="401.0" prefWidth="402.0" style="-fx-border-color: black;" />
+            <AnchorPane prefHeight="403.0" prefWidth="407.0" style="-fx-border-color: black;" />
          </children>
       </AnchorPane>
    </children>
