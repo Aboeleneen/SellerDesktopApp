@@ -21,6 +21,8 @@ public class Product {
     private double discount;
     private int image_id;
     private String material;
+    private int brand_id;
+    private String brand_name;
     public Product(int product_id, String product_name, double price, double discount, int image_id, String material , String category, String sub_category ,int size, String color ) {
         this.product_id = product_id;
         this.product_name = product_name;
@@ -32,6 +34,10 @@ public class Product {
         this.discount=discount;
         this.material=material;
         this.image_id = image_id;
+    }
+    
+    public Product(){
+        
     }
 
     public int getProduct_id() {
@@ -112,6 +118,22 @@ public class Product {
 
     public void setMaterial(String material) {
         this.material = material;
+    }
+
+    public int getBrand_id() {
+        return brand_id;
+    }
+
+    public void setBrand_id(int brand_id) {
+        this.brand_id = brand_id;
+    }
+
+    public String getBrand_name() {
+        return brand_name;
+    }
+
+    public void setBrand_name(String brand_name) {
+        this.brand_name = brand_name;
     }
     
 }

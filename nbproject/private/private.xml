@@ -3,26 +3,31 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/CSED/SellerDesktopApp/src/View/SellerDesktopApp.java</file>
-            <file>file:/D:/CSED/SellerDesktopApp/src/View/ProductsController.java</file>
+            <file>file:/D:/CSED/SellerDesktopApp/src/View/EditProductController.java</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/HomePageController.java</file>
-            <file>file:/D:/CSED/SellerDesktopApp/src/Model/Product.java</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/Model/SceneChanger.java</file>
-            <file>file:/D:/CSED/SellerDesktopApp/src/View/AddProduct.fxml</file>
-            <file>file:/D:/CSED/SellerDesktopApp/src/View/Profile.fxml</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/Orders.fxml</file>
-            <file>file:/D:/CSED/SellerDesktopApp/src/Model/DBConnect.java</file>
-            <file>file:/D:/CSED/SellerDesktopApp/src/View/HomePage.fxml</file>
+            <file>file:/D:/CSED/SellerDesktopApp/src/View/ProductView.fxml</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/OrdersController.java</file>
-            <file>file:/D:/CSED/SellerDesktopApp/src/View/Products.fxml</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/ProfileController.java</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/LoginController.java</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/OrderDetails.fxml</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/AddProductController.java</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/Model/Order.java</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/Model/Brand.java</file>
+            <file>file:/D:/CSED/SellerDesktopApp/src/View/EditProduct.fxml</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/Login.fxml</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/OrderDetailsController.java</file>
+            <file>file:/D:/CSED/SellerDesktopApp/src/View/ProductViewController.java</file>
+            <file>file:/D:/CSED/SellerDesktopApp/src/View/SellerDesktopApp.java</file>
+            <file>file:/D:/CSED/SellerDesktopApp/src/View/ProductsController.java</file>
+            <file>file:/D:/CSED/SellerDesktopApp/src/Model/Product.java</file>
+            <file>file:/D:/CSED/SellerDesktopApp/src/View/EditProfileController.java</file>
+            <file>file:/D:/CSED/SellerDesktopApp/src/View/AddProduct.fxml</file>
+            <file>file:/D:/CSED/SellerDesktopApp/src/View/Profile.fxml</file>
+            <file>file:/D:/CSED/SellerDesktopApp/src/View/HomePage.fxml</file>
+            <file>file:/D:/CSED/SellerDesktopApp/src/View/Products.fxml</file>
+            <file>file:/D:/CSED/SellerDesktopApp/src/Model/DBConnection.java</file>
         </group>
     </open-files>
 </project-private>

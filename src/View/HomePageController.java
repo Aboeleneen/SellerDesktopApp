@@ -8,6 +8,7 @@ package View;
 import Model.Brand;
 import java.io.IOException;
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -80,6 +81,11 @@ public class HomePageController implements Initializable {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("Orders.fxml"));
         Parent ordersView = loader.load();
+        
+        // pass information to orders scene
+        OrdersController controller = loader.getController();
+        controller.initDate(selectedBrand);
+        
         Scene scene = new Scene(ordersView);
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(scene);
@@ -90,12 +96,18 @@ public class HomePageController implements Initializable {
      * change scene to show profile of current brand
      * @param event
      * @throws java.io.IOException
+     * @throws java.sql.SQLException
      */
     @FXML
-    public void showProfile(ActionEvent event) throws IOException{
+    public void showProfile(ActionEvent event) throws IOException, SQLException{
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("Profile.fxml"));
         Parent ordersView = loader.load();
+        
+        // pass information to profile scene
+        ProfileController controller = loader.getController();
+        controller.initData(selectedBrand);
+        
         Scene scene = new Scene(ordersView);
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(scene);
@@ -112,6 +124,22 @@ public class HomePageController implements Initializable {
         loader.setLocation(getClass().getResource("Chat.fxml"));
         Parent ordersView = loader.load();
         Scene scene = new Scene(ordersView);
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setScene(scene);
+        window.show();
+    }
+    
+    /**
+     * logout and return to login scene
+     * @param event
+     * @throws java.io.IOException
+     */
+    @FXML
+    public void logout(ActionEvent event) throws IOException{
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("Login.fxml"));
+        Parent loginView = loader.load();
+        Scene scene = new Scene(loginView);
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(scene);
         window.show();

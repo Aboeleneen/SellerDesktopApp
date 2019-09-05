@@ -19,9 +19,11 @@ public class Brand {
     private String location;
     private int image_id;
     private String brand_name;
+    private String email;
     private ObservableList<Product> products;
     private ObservableList<Order> orders;
-    public Brand(int brand_id , String username ,String password , int phone_id , String location , int image_id , String brand_name){
+    private Product editedProdcut;
+    public Brand(int brand_id , String username ,String password , int phone_id , String location , int image_id , String brand_name , String email){
         this.brand_id=brand_id;
         this.username=username;
         this.password=password;
@@ -29,6 +31,7 @@ public class Brand {
         this.location=location;
         this.image_id= image_id;
         this.brand_name=brand_name;
+        this.email=email;
     }
 
     public int getBrand_id() {
@@ -102,5 +105,26 @@ public class Brand {
     public void setOrders(ObservableList<Order> orders) {
         this.orders = orders;
     }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    
+    public void addNewProduct(Product product){
+        this.products.add(product);
+    }
+
+    public Product getEditedProdcut() {
+        return editedProdcut;
+    }
+
+    public void setEditedProdcut(Product editedProdcut) {
+        this.editedProdcut = editedProdcut;
+    }
+    
     
 }

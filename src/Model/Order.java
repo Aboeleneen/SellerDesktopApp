@@ -16,15 +16,15 @@ public class Order {
     
     private int order_id ;
     private int total_price;
-    private int payment_id;
+    private String payment_type;
     private ObservableList<Product> products;
     private Date order_date;
     private Boolean status;
-
-    public Order(int order_id , int total_price, int payment_id, Date order_date, Boolean status) {
+    private int productsNum;
+    public Order(int order_id , int total_price, String payment_type, Date order_date, Boolean status) {
         this.order_id = order_id;
         this.total_price = total_price;
-        this.payment_id = payment_id;
+        this.payment_type = payment_type;
         this.order_date = order_date;
         this.status = status;
     }
@@ -45,12 +45,12 @@ public class Order {
         this.total_price = total_price;
     }
 
-    public int getPayment_id() {
-        return payment_id;
+    public String getPayment_type() {
+        return payment_type;
     }
 
-    public void setPayment_id(int payment_id) {
-        this.payment_id = payment_id;
+    public void setPayment_type(String payment_type) {
+        this.payment_type = payment_type;
     }
 
     public ObservableList<Product> getProducts() {
@@ -75,6 +75,14 @@ public class Order {
 
     public void setStatus(Boolean status) {
         this.status = status;
+    }
+
+    public int getProductsNum() {
+        return productsNum;
+    }
+
+    public void setProductsNum(int productsNum) {
+        this.productsNum = productsNum;
     }
     
     

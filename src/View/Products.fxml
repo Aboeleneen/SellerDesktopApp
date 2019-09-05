@@ -28,11 +28,11 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <Button layoutX="57.0" layoutY="336.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="View Product" />
-      <Button layoutX="180.0" layoutY="336.0" mnemonicParsing="false" text="Delete Product" />
-      <Button layoutX="304.0" layoutY="336.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" text="Edit Product" />
-      <Button layoutX="422.0" layoutY="336.0" mnemonicParsing="false" text="Add New Product" />
-      <Button layoutX="216.0" layoutY="387.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" text="home" />
-      <Button layoutX="334.0" layoutY="387.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="63.0" text="logout" />
+      <Button layoutX="57.0" layoutY="336.0" mnemonicParsing="false" onAction="#dislay" prefHeight="25.0" prefWidth="95.0" text="View Product" />
+      <Button layoutX="180.0" layoutY="336.0" mnemonicParsing="false" onAction="#deleteProduct" text="Delete Product" />
+      <Button layoutX="304.0" layoutY="336.0" mnemonicParsing="false" onAction="#editProduct" prefHeight="25.0" prefWidth="87.0" text="Edit Product" />
+      <Button layoutX="422.0" layoutY="336.0" mnemonicParsing="false" onAction="#addNewProduct" text="Add New Product" />
+      <Button layoutX="216.0" layoutY="387.0" mnemonicParsing="false" onAction="#goHome" prefHeight="25.0" prefWidth="78.0" text="home" />
+      <Button layoutX="334.0" layoutY="387.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="63.0" text="logout" />
    </children>
 </AnchorPane>

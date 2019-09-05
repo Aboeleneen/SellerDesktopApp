@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.EditProductController">
+   <children>
+      <Text layoutX="230.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Product" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Text>
+      <GridPane layoutX="64.0" layoutY="91.0" prefHeight="271.0" prefWidth="327.0">
+         <children>
+            <Label text="Product name :">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label text="Color  :" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label text="Size :" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label text="Material :" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label text="category :" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label text="subCategory" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label text="price :" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label text="discout :" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="productName" GridPane.columnIndex="1" />
+            <ColorPicker fx:id="color" prefHeight="25.0" prefWidth="124.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="size" prefHeight="25.0" prefWidth="211.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="material" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ChoiceBox fx:id="category" prefHeight="25.0" prefWidth="164.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ChoiceBox fx:id="subCategory" prefHeight="25.0" prefWidth="165.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="price" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="discount" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="10.0" prefWidth="89.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="238.0" minWidth="10.0" prefWidth="238.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="36.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="46.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="56.0" minHeight="0.0" prefHeight="38.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="43.0" minHeight="6.0" prefHeight="34.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="52.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="57.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="52.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="52.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <AnchorPane layoutX="415.0" layoutY="90.0" prefHeight="215.0" prefWidth="175.0">
+         <children>
+            <Button layoutX="40.0" layoutY="176.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="upload image" />
+            <ImageView fx:id="imageview" fitHeight="152.0" fitWidth="139.0" layoutX="19.0" layoutY="2.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../resources/2.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="415.0" layoutY="395.0" mnemonicParsing="false" onAction="#save" prefHeight="25.0" prefWidth="56.0" text="save" />
+      <Button layoutX="189.0" layoutY="395.0" mnemonicParsing="false" onAction="#Back" text="Back" />
+   </children>
+</AnchorPane>

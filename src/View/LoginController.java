@@ -6,7 +6,7 @@
 package View;
 
 import Model.Brand;
-import Model.DBConnect;
+import Model.DBConnection;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
@@ -53,6 +53,7 @@ public class LoginController implements Initializable {
     @FXML
     public void login(ActionEvent event) throws IOException, SQLException{
         if(check()){
+            
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("HomePage.fxml"));
             Parent homeView = loader.load();
@@ -60,7 +61,8 @@ public class LoginController implements Initializable {
             // pass data to home page scene
             HomePageController controller = loader.getController();
             controller.initData(this.getBrand());
-                ;
+            
+            
             Scene scene = new Scene(homeView);
             Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
             window.setScene(scene);
@@ -74,17 +76,17 @@ public class LoginController implements Initializable {
      * call checkLogin function in database class
      */
     private Boolean check() throws SQLException{
-        DBConnect db = DBConnect.getInstance();
+        DBConnection db = DBConnection.getInstance();
         String user = this.username.getText();
         String pass = this.password.getText();
         return db.checkLogin(user, pass);
     }
     
     /**
-     * get brand object of current admin
+     * get brand object of current brand
      */
     private Brand getBrand() throws SQLException{
-        DBConnect db = DBConnect.getInstance();
+        DBConnection db = DBConnection.getInstance();
         return db.getBrand(this.username.getText(), this.password.getText());
     }
     

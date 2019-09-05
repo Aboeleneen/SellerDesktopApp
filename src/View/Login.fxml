@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -7,10 +8,16 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="615.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="View.LoginController">
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.LoginController">
    <children>
-      <AnchorPane prefHeight="450.0" prefWidth="308.0" style="-fx-background-color: black;" />
+      <AnchorPane prefHeight="450.0" prefWidth="308.0" style="-fx-background-color: black;">
+         <children>
+            <ImageView fitHeight="217.0" fitWidth="227.0" layoutX="27.0" layoutY="120.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../resources/2.jpeg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
       <AnchorPane layoutX="308.0" prefHeight="450.0" prefWidth="307.0">
          <children>
             <Text layoutX="89.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seller App">
@@ -21,7 +28,7 @@
             <TextField fx:id="username" layoutX="55.0" layoutY="175.0" prefHeight="25.0" prefWidth="197.0" />
             <PasswordField fx:id="password" layoutX="55.0" layoutY="249.0" prefHeight="25.0" prefWidth="197.0" />
             <Button layoutX="120.0" layoutY="322.0" mnemonicParsing="false" onAction="#login" text="Login" />
-            <Label fx:id="errorMessage" layoutX="41.0" layoutY="292.0" prefHeight="17.0" prefWidth="227.0" />
+            <Label fx:id="errorMessage" layoutX="41.0" layoutY="292.0" prefHeight="17.0" prefWidth="227.0" textFill="#da3535" />
          </children>
       </AnchorPane>
    </children>
