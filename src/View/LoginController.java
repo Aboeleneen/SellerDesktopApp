@@ -90,4 +90,22 @@ public class LoginController implements Initializable {
         return db.getBrand(this.username.getText(), this.password.getText());
     }
     
+    /**
+     * forgot password
+     */
+    @FXML
+    public void forgotPassword(ActionEvent event) throws IOException{
+         FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("ForgotPassword.fxml"));
+            Parent homeView = loader.load();
+            
+            Scene scene = new Scene(homeView);
+            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+            window.setScene(scene);
+            window.show();
+    }
+    
+    
+    
+    
 }

@@ -10,6 +10,7 @@
             <file>file:/D:/CSED/SellerDesktopApp/src/View/OrderPage.fxml</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/ProductView.fxml</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/OrdersController.java</file>
+            <file>file:/D:/CSED/SellerDesktopApp/src/View/ForgotPasswordController.java</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/ProfileController.java</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/LoginController.java</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/OrderDetails.fxml</file>
@@ -26,6 +27,7 @@
             <file>file:/D:/CSED/SellerDesktopApp/src/View/OrderPageController.java</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/Model/Product.java</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/EditProfileController.java</file>
+            <file>file:/D:/CSED/SellerDesktopApp/src/View/ForgotPassword.fxml</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/AddProduct.fxml</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/Profile.fxml</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/HomePage.fxml</file>

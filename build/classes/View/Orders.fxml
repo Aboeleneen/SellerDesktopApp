@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="back" prefHeight="450.0" prefWidth="615.0" style="-fx-background-color: linear;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.OrdersController">
+<AnchorPane id="back" prefHeight="450.0" prefWidth="615.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.OrdersController">
    <children>
       <Text fill="WHITE" layoutX="233.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Orders" underline="true">
          <font>
@@ -16,12 +16,12 @@
       </Text>
       <TableView fx:id="tableView" layoutX="25.0" layoutY="70.0" prefHeight="311.0" prefWidth="565.0">
         <columns>
-          <TableColumn fx:id="column_id" prefWidth="75.0" text="Order_id" />
-          <TableColumn fx:id="column_productNum" prefWidth="75.0" text=" ProductsNum" />
+          <TableColumn fx:id="column_id" prefWidth="75.0" text="Order ID" />
+          <TableColumn fx:id="column_productNum" prefWidth="75.0" text=" Products Num" />
             <TableColumn fx:id="column_status" prefWidth="75.0" text="Status" />
-            <TableColumn fx:id="column_totalPrice" prefWidth="75.0" text="Total_Price" />
-            <TableColumn fx:id="column_paymentType" prefWidth="75.0" text="payment_type" />
-            <TableColumn fx:id="column_date" prefWidth="75.0" text="date" />
+            <TableColumn fx:id="column_totalPrice" prefWidth="75.0" text="Total Price" />
+            <TableColumn fx:id="column_paymentType" prefWidth="75.0" text="Payment Type" />
+            <TableColumn fx:id="column_date" prefWidth="75.0" text="Date" />
         </columns>
          <columnResizePolicy>
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />

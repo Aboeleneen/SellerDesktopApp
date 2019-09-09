@@ -36,7 +36,7 @@
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <Label text="Color  :" textFill="WHITE" GridPane.rowIndex="1">
+            <Label text="Color :" textFill="WHITE" GridPane.rowIndex="1">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
@@ -51,22 +51,22 @@
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <Label text="category :" textFill="WHITE" GridPane.rowIndex="4">
+            <Label text="Category : " textFill="WHITE" GridPane.rowIndex="4">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <Label text="subCategory" textFill="WHITE" GridPane.rowIndex="5">
+            <Label text="SubCategory :" textFill="WHITE" GridPane.rowIndex="5">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <Label text="price :" textFill="WHITE" GridPane.rowIndex="6">
+            <Label text="Price :" textFill="WHITE" GridPane.rowIndex="6">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <Label text="discout :" textFill="WHITE" GridPane.rowIndex="7">
+            <Label text="Discount :" textFill="WHITE" GridPane.rowIndex="7">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
@@ -86,7 +86,7 @@
             <Button id="button" layoutX="40.0" layoutY="176.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="111.0" text="Upload image" />
             <ImageView fx:id="imageview" fitHeight="152.0" fitWidth="139.0" layoutX="19.0" layoutY="2.0" pickOnBounds="true">
                <image>
-                  <Image url="@../resources/2.jpeg" />
+                  <Image url="@../resources/product2.jpg" />
                </image>
             </ImageView>
          </children>

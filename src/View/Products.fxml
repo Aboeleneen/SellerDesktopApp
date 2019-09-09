@@ -28,29 +28,29 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <Button layoutX="57.0" layoutY="336.0" mnemonicParsing="false" onAction="#dislay" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: black;" text="View Product" textFill="WHITE">
+      <Button layoutX="44.0" layoutY="336.0" mnemonicParsing="false" onAction="#dislay" prefHeight="27.0" prefWidth="110.0" style="-fx-background-color: black;" text="View Product" textFill="WHITE">
          <font>
-            <Font name="Bell MT Bold" size="12.0" />
+            <Font name="Bell MT Bold" size="14.0" />
          </font></Button>
-      <Button layoutX="180.0" layoutY="336.0" mnemonicParsing="false" onAction="#deleteProduct" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: black;" text="Delete Product" textFill="WHITE">
+      <Button layoutX="171.0" layoutY="336.0" mnemonicParsing="false" onAction="#deleteProduct" prefHeight="27.0" prefWidth="121.0" style="-fx-background-color: black;" text="Delete Product" textFill="WHITE">
          <font>
-            <Font name="Bell MT Bold" size="12.0" />
+            <Font name="Bell MT Bold" size="14.0" />
          </font></Button>
-      <Button layoutX="304.0" layoutY="336.0" mnemonicParsing="false" onAction="#editProduct" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: black;" text="Edit Product" textFill="WHITE">
+      <Button layoutX="310.0" layoutY="336.0" mnemonicParsing="false" onAction="#editProduct" prefHeight="27.0" prefWidth="103.0" style="-fx-background-color: black;" text="Edit Product" textFill="WHITE">
          <font>
-            <Font name="Bell MT Bold" size="12.0" />
+            <Font name="Bell MT Bold" size="14.0" />
          </font></Button>
-      <Button layoutX="422.0" layoutY="336.0" mnemonicParsing="false" onAction="#addNewProduct" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: black;" text="Add New Product" textFill="WHITE">
+      <Button layoutX="432.0" layoutY="336.0" mnemonicParsing="false" onAction="#addNewProduct" prefHeight="27.0" prefWidth="131.0" style="-fx-background-color: black;" text="Add New Product" textFill="WHITE">
          <font>
-            <Font name="Bell MT Bold" size="12.0" />
+            <Font name="Bell MT Bold" size="14.0" />
          </font></Button>
-      <Button layoutX="216.0" layoutY="387.0" mnemonicParsing="false" onAction="#goHome" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: black;" text="Home" textFill="WHITE">
+      <Button layoutX="216.0" layoutY="387.0" mnemonicParsing="false" onAction="#goHome" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: black;" text="Home" textFill="WHITE">
          <font>
-            <Font name="Bell MT Bold" size="12.0" />
+            <Font name="Bell MT Bold" size="14.0" />
          </font></Button>
-      <Button layoutX="334.0" layoutY="387.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: black;" text="Logout" textFill="WHITE">
+      <Button layoutX="330.0" layoutY="387.0" mnemonicParsing="false" onAction="#logout" prefHeight="27.0" prefWidth="67.0" style="-fx-background-color: black;" text="Logout" textFill="WHITE">
          <font>
-            <Font name="Bell MT Bold" size="12.0" />
+            <Font name="Bell MT Bold" size="14.0" />
          </font></Button>
    </children>
 </AnchorPane>

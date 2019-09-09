@@ -107,4 +107,24 @@ public class EditProfileController implements Initializable {
         return brand;
     }
     
+    /**
+     * back to profile scene
+     */
+    @FXML
+    public void back(ActionEvent event) throws SQLException, IOException{
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("Profile.fxml"));
+        Parent homeView = loader.load();
+           
+        // pass data to home page scene
+        ProfileController controller = loader.getController();
+        controller.initData(selectedBrand);
+            
+            
+        Scene scene = new Scene(homeView);
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setScene(scene);
+        window.show();
+    }
+    
 }

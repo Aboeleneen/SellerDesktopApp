@@ -12,33 +12,38 @@
    <children>
       <AnchorPane prefHeight="450.0" prefWidth="308.0" style="-fx-background-color: black;">
          <children>
-            <ImageView fitHeight="217.0" fitWidth="227.0" layoutX="27.0" layoutY="120.0" pickOnBounds="true">
+            <ImageView fitHeight="221.0" fitWidth="197.0" layoutX="45.0" layoutY="121.0" pickOnBounds="true">
                <image>
-                  <Image url="@../resources/2.jpeg" />
+                  <Image url="@../resources/logowithshadow.png" />
                </image>
             </ImageView>
          </children></AnchorPane>
-      <AnchorPane layoutX="308.0" prefHeight="450.0" prefWidth="307.0">
+      <AnchorPane id="back" layoutX="308.0" prefHeight="450.0" prefWidth="307.0" stylesheets="@style.css">
          <children>
-            <Text layoutX="89.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seller App">
+            <Text fill="WHITE" layoutX="89.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seller App">
                <font>
-                  <Font name="System Bold Italic" size="24.0" />
+                  <Font name="System Bold" size="25.0" />
                </font>
             </Text>
             <TextField fx:id="username" layoutX="55.0" layoutY="175.0" prefHeight="25.0" prefWidth="197.0" />
-            <PasswordField fx:id="password" layoutX="55.0" layoutY="249.0" prefHeight="25.0" prefWidth="197.0" />
-            <Button layoutX="120.0" layoutY="322.0" mnemonicParsing="false" onAction="#login" text="Login" />
-            <Label fx:id="errorMessage" layoutX="41.0" layoutY="292.0" prefHeight="17.0" prefWidth="227.0" textFill="#da3535" />
-            <Text layoutX="55.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username :">
+            <PasswordField fx:id="password" layoutX="55.0" layoutY="253.0" prefHeight="25.0" prefWidth="197.0" />
+            <Button id="button" layoutX="127.0" layoutY="317.0" mnemonicParsing="false" onAction="#login" text="Login" />
+            <Label fx:id="errorMessage" layoutX="47.0" layoutY="356.0" prefHeight="17.0" prefWidth="227.0" textFill="#da3535" />
+            <Text fill="#f5f5f5" layoutX="55.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username :">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </Text>
-            <Text layoutX="57.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :">
+            <Text fill="#f8f8f8" layoutX="55.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </Text>
+            <Button layoutX="86.0" layoutY="282.0" mnemonicParsing="false" onAction="#forgotPassword" style="-fx-background-color: none;" text="Forgot password ?" textFill="#fff4f4">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
    </children>
