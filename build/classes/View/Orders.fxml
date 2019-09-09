@@ -7,9 +7,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.OrdersController">
+<AnchorPane id="back" prefHeight="450.0" prefWidth="615.0" style="-fx-background-color: linear;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.OrdersController">
    <children>
-      <Text layoutX="233.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Orders" underline="true">
+      <Text fill="WHITE" layoutX="233.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Orders" underline="true">
          <font>
             <Font name="System Bold Italic" size="21.0" />
          </font>
@@ -27,7 +27,7 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <Button layoutX="134.0" layoutY="402.0" mnemonicParsing="false" onAction="#goHome" text="Home" />
-      <Button layoutX="427.0" layoutY="402.0" mnemonicParsing="false" text="Show Order" />
+      <Button id="button" layoutX="134.0" layoutY="402.0" mnemonicParsing="false" onAction="#goHome" text="Home" />
+      <Button id="button" layoutX="427.0" layoutY="402.0" mnemonicParsing="false" onAction="#dislay" text="Show Order" />
    </children>
 </AnchorPane>

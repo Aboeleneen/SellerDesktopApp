@@ -7,8 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="615.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="View.OrderDetailsController">
+<AnchorPane id="back" prefHeight="450.0" prefWidth="615.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.OrderDetailsController">
    <children>
       <Text layoutX="230.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order Details" underline="true">
          <font>

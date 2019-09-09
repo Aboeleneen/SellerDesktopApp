@@ -85,7 +85,7 @@ public class HomePageController implements Initializable {
         // pass information to orders scene
         OrdersController controller = loader.getController();
         controller.initDate(selectedBrand);
-        
+        System.out.println("DoneYaMahmoud  " + selectedBrand.getOrders().size());
         Scene scene = new Scene(ordersView);
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(scene);

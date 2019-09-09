@@ -315,5 +315,40 @@ public class DBConnection {
         ps.setInt(6,selectedProduct.getProduct_id());
         ps.executeUpdate();
     }
+    
+    /**
+     * update profile
+     */
+    public void updateProfile(Brand brand) throws SQLException{
+        String query = "UPDATE brand SET name= ? , username = ?, password = ? , email = ? , location = ? WHERE brand.brand_id = ?";
+        PreparedStatement ps = con.prepareStatement(query);
+        ps.setString(1, brand.getBrand_name());
+        ps.setString(2, brand.getUsername());
+        ps.setString(3,brand.getPassword());
+        ps.setString(4, brand.getEmail());
+        ps.setString(5, brand.getLocation());
+        // phone problem
+        // image problem
+        ps.setInt(6, brand.getBrand_id());
+        ps.executeUpdate();
+    }
+    
+    public int getPhoneID(String phone) throws SQLException{
+        String query = "Select * from phones where phone = ? ";
+        PreparedStatement ps = con.prepareStatement(query);
+        ps.setString(1, phone);
+        rs = ps.executeQuery();
+        if(rs.last()){
+            rs.next();
+            return rs.getInt("phone_id");
+        }else{
+            query = "insert into phones(phone) values(?)";
+            ps = con.prepareStatement(query,Statement.RETURN_GENERATED_KEYS);
+            ps.setString(1, phone);
+            rs=ps.getGeneratedKeys();
+            rs.next();
+            return rs.getInt(1);
+        }
+    }
      
 }

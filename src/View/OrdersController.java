@@ -9,6 +9,7 @@ import Model.Brand;
 import Model.Order;
 import java.io.IOException;
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -79,6 +80,23 @@ public class OrdersController implements Initializable {
             Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
             window.setScene(scene);
             window.show();
+    }
+    
+    // display order page contatin all information about selected order 
+    @FXML
+    public  void dislay(ActionEvent event) throws IOException, SQLException{
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("OrderPage.fxml"));
+        Parent root = loader.load();
+        
+         // pass information to orderPage scene
+        OrderPageController controller = loader.getController();
+        controller.initData(this.tableView.getSelectionModel().getSelectedItem());
+        
+        Scene scene = new Scene(root);
+        Stage orderWindow = new Stage();
+        orderWindow.setScene(scene);
+        orderWindow.show();
     }
     
 }

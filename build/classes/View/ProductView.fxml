@@ -8,68 +8,67 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="615.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="View.ProductViewController">
+<AnchorPane id="back" prefHeight="450.0" prefWidth="615.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.ProductViewController">
    <children>
-      <Text layoutX="233.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ProductView" underline="true">
+      <Text id="ourLabel" fill="WHITE" layoutX="233.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ProductView" underline="true">
          <font>
-            <Font name="System Bold" size="21.0" />
+            <Font name="System Bold" size="24.0" />
          </font>
       </Text>
-      <GridPane layoutX="70.0" layoutY="79.0" prefHeight="299.0" prefWidth="327.0">
+      <GridPane layoutX="50.0" layoutY="61.0" prefHeight="299.0" prefWidth="327.0">
          <children>
-            <Label text="Product name :">
+            <Label text="Product name :" textFill="WHITE">
                <font>
-                  <Font name="System Bold" size="12.0" />
+                  <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <Label text="Color  :" GridPane.rowIndex="1">
+            <Label text="Color  :" textFill="WHITE" GridPane.rowIndex="1">
                <font>
-                  <Font name="System Bold" size="12.0" />
+                  <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <Label text="Size :" GridPane.rowIndex="2">
+            <Label text="Size :" textFill="WHITE" GridPane.rowIndex="2">
                <font>
-                  <Font name="System Bold" size="12.0" />
+                  <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <Label text="Material :" GridPane.rowIndex="3">
+            <Label text="Material :" textFill="WHITE" GridPane.rowIndex="3">
                <font>
-                  <Font name="System Bold" size="12.0" />
+                  <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <Label text="category :" GridPane.rowIndex="4">
+            <Label text="Category :" textFill="WHITE" GridPane.rowIndex="4">
                <font>
-                  <Font name="System Bold" size="12.0" />
+                  <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <Label text="subCategory" GridPane.rowIndex="5">
+            <Label text="SubCategory :" textFill="WHITE" GridPane.rowIndex="5">
                <font>
-                  <Font name="System Bold" size="12.0" />
+                  <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <Label text="price :" GridPane.rowIndex="6">
+            <Label text="Price :" textFill="WHITE" GridPane.rowIndex="6">
                <font>
-                  <Font name="System Bold" size="12.0" />
+                  <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <Label text="discout :" GridPane.rowIndex="7">
+            <Label text="Discout  :" textFill="WHITE" GridPane.rowIndex="7">
                <font>
-                  <Font name="System Bold" size="12.0" />
+                  <Font name="System Bold" size="13.0" />
                </font>
             </Label>
-            <Label fx:id="productName" prefHeight="17.0" prefWidth="209.0" text="Label" GridPane.columnIndex="1" />
-            <Label fx:id="color" prefHeight="17.0" prefWidth="244.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Label fx:id="price" prefHeight="17.0" prefWidth="244.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <Label fx:id="subCategory" prefHeight="17.0" prefWidth="244.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <Label fx:id="category" prefHeight="17.0" prefWidth="244.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Label fx:id="material" prefHeight="17.0" prefWidth="244.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Label fx:id="size" prefHeight="17.0" prefWidth="244.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Label fx:id="discount" prefHeight="17.0" prefWidth="244.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label id="ourlabel" fx:id="productName" prefHeight="17.0" prefWidth="209.0" stylesheets="@style.css" text="Label" textFill="#f5f5f5" GridPane.columnIndex="1" />
+            <Label fx:id="color" prefHeight="17.0" prefWidth="244.0" text="Label" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="price" prefHeight="17.0" prefWidth="244.0" text="Label" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label fx:id="subCategory" prefHeight="17.0" prefWidth="244.0" text="Label" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="category" prefHeight="17.0" prefWidth="244.0" text="Label" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="material" prefHeight="17.0" prefWidth="244.0" text="Label" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="size" prefHeight="17.0" prefWidth="244.0" text="Label" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="discount" prefHeight="17.0" prefWidth="244.0" text="Label" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="7" />
          </children>
          <columnConstraints>
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="10.0" prefWidth="89.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="238.0" minWidth="10.0" prefWidth="238.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="10.0" prefWidth="103.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="238.0" minWidth="10.0" prefWidth="224.0" />
          </columnConstraints>
          <rowConstraints>
             <RowConstraints maxHeight="36.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
@@ -82,9 +81,9 @@
             <RowConstraints maxHeight="52.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
          </rowConstraints>
       </GridPane>
-      <AnchorPane layoutX="416.0" layoutY="79.0" prefHeight="215.0" prefWidth="175.0">
+      <AnchorPane layoutX="387.0" layoutY="78.0" prefHeight="215.0" prefWidth="175.0">
          <children>
-            <ImageView fx:id="imageview" fitHeight="152.0" fitWidth="139.0" layoutX="19.0" layoutY="2.0" pickOnBounds="true">
+            <ImageView fx:id="imageview" fitHeight="152.0" fitWidth="139.0" layoutX="18.0" layoutY="14.0" pickOnBounds="true">
                <image>
                   <Image url="@../resources/2.jpeg" />
                </image>

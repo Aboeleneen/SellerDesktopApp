@@ -7,32 +7,50 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.ProductsController">
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="615.0" style="-fx-background-color: linear-gradient(black,white);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.ProductsController">
    <children>
-      <Text layoutX="247.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Products">
+      <Text fill="#f2efef" layoutX="247.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Products">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
       </Text>
       <TableView fx:id="tableview" layoutX="25.0" layoutY="68.0" prefHeight="251.0" prefWidth="557.0">
         <columns>
-          <TableColumn fx:id="column_id" prefWidth="103.0" text="id" />
-          <TableColumn fx:id="column_name" prefWidth="108.0" text="name" />
-            <TableColumn fx:id="column_color" prefWidth="75.0" text="color" />
-            <TableColumn fx:id="column_size" prefWidth="75.0" text="size" />
-            <TableColumn fx:id="column_category" prefWidth="75.0" text="category" />
-            <TableColumn fx:id="column_subcategory" prefWidth="75.0" text="subCategory" />
-            <TableColumn fx:id="column_material" prefWidth="75.0" text="material" />
+          <TableColumn fx:id="column_id" prefWidth="103.0" text="Id" />
+          <TableColumn fx:id="column_name" prefWidth="108.0" text="Name" />
+            <TableColumn fx:id="column_color" prefWidth="75.0" text="Color" />
+            <TableColumn fx:id="column_size" prefWidth="75.0" text="Size" />
+            <TableColumn fx:id="column_category" prefWidth="75.0" text="Category" />
+            <TableColumn fx:id="column_subcategory" prefWidth="75.0" text="SubCategory" />
+            <TableColumn fx:id="column_material" prefWidth="75.0" text="Material" />
         </columns>
          <columnResizePolicy>
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <Button layoutX="57.0" layoutY="336.0" mnemonicParsing="false" onAction="#dislay" prefHeight="25.0" prefWidth="95.0" text="View Product" />
-      <Button layoutX="180.0" layoutY="336.0" mnemonicParsing="false" onAction="#deleteProduct" text="Delete Product" />
-      <Button layoutX="304.0" layoutY="336.0" mnemonicParsing="false" onAction="#editProduct" prefHeight="25.0" prefWidth="87.0" text="Edit Product" />
-      <Button layoutX="422.0" layoutY="336.0" mnemonicParsing="false" onAction="#addNewProduct" text="Add New Product" />
-      <Button layoutX="216.0" layoutY="387.0" mnemonicParsing="false" onAction="#goHome" prefHeight="25.0" prefWidth="78.0" text="home" />
-      <Button layoutX="334.0" layoutY="387.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="63.0" text="logout" />
+      <Button layoutX="57.0" layoutY="336.0" mnemonicParsing="false" onAction="#dislay" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: black;" text="View Product" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="180.0" layoutY="336.0" mnemonicParsing="false" onAction="#deleteProduct" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: black;" text="Delete Product" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="304.0" layoutY="336.0" mnemonicParsing="false" onAction="#editProduct" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: black;" text="Edit Product" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="422.0" layoutY="336.0" mnemonicParsing="false" onAction="#addNewProduct" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: black;" text="Add New Product" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="216.0" layoutY="387.0" mnemonicParsing="false" onAction="#goHome" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: black;" text="Home" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="334.0" layoutY="387.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: black;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="12.0" />
+         </font></Button>
    </children>
 </AnchorPane>
