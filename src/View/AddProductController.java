@@ -6,7 +6,7 @@
 package View;
 
 import Model.Brand;
-import Model.DBConnection;
+import Model.DBConnect;
 import Model.Product;
 import java.io.IOException;
 import java.net.URL;
@@ -107,7 +107,7 @@ public class AddProductController implements Initializable {
         product.setBrand_name(this.selectedBrand.getBrand_name());
         
         // add image
-      //  DBConnection db  = DBConnection.getInstance();
+      //  DBConnect db  = DBConnect.getInstance();
       //  product.setImage_id(db.InsertImage(imageview.getImage().));
       
         product.setProduct_id(this.insertProduct(product));
@@ -117,7 +117,7 @@ public class AddProductController implements Initializable {
      * insert new product into database
      */
     private int insertProduct(Product product) throws SQLException{
-        DBConnection db = DBConnection.getInstance();
+        DBConnect db = DBConnect.getInstance();
         return db.InsertProduct(product);
     }
     

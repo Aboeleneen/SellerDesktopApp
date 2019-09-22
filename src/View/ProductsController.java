@@ -6,7 +6,7 @@
 package View;
 
 import Model.Brand;
-import Model.DBConnection;
+import Model.DBConnect;
 import Model.Product;
 import java.io.IOException;
 import java.net.URL;
@@ -137,6 +137,7 @@ public class ProductsController implements Initializable {
         Scene scene = new Scene(root);
         Stage orderWindow = new Stage();
         orderWindow.setScene(scene);
+        orderWindow.setTitle("SellerDesktopApp");
         orderWindow.show();
     }
     
@@ -147,7 +148,7 @@ public class ProductsController implements Initializable {
     public void deleteProduct() throws SQLException{
         Product product = this.tableview.getSelectionModel().getSelectedItem();
         selectedBrand.getProducts().remove(product);
-        DBConnection db = DBConnection.getInstance();
+        DBConnect db = DBConnect.getInstance();
         db.deleteProduct(product.getProduct_id());
         this.tableview.setItems(selectedBrand.getProducts());
     }

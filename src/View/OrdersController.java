@@ -96,6 +96,7 @@ public class OrdersController implements Initializable {
         Scene scene = new Scene(root);
         Stage orderWindow = new Stage();
         orderWindow.setScene(scene);
+        orderWindow.setTitle("SellerDesktopApp");
         orderWindow.show();
     }
     

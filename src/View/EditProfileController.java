@@ -6,7 +6,7 @@
 package View;
 
 import Model.Brand;
-import Model.DBConnection;
+import Model.DBConnect;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.PreparedStatement;
@@ -62,7 +62,7 @@ public class EditProfileController implements Initializable {
      * get phone given phone_id
      */
     public String getPhone() throws SQLException{
-        DBConnection db = DBConnection.getInstance();
+        DBConnect db = DBConnect.getInstance();
         return db.getPhone(selectedBrand.getPhone_id());
     }
     
@@ -71,7 +71,7 @@ public class EditProfileController implements Initializable {
      */
     @FXML
     public void saveEdit(ActionEvent event) throws SQLException, IOException{
-        DBConnection db = DBConnection.getInstance();
+        DBConnect db = DBConnect.getInstance();
         selectedBrand = this.getBrand();
         db.updateProfile(selectedBrand);
         

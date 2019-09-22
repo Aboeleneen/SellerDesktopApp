@@ -6,7 +6,7 @@
 package View;
 
 import Model.Brand;
-import Model.DBConnection;
+import Model.DBConnect;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
@@ -63,7 +63,7 @@ public class ProfileController implements Initializable {
      * get phone number from database
      */
     private String getPhone() throws SQLException{
-        DBConnection db = DBConnection.getInstance();
+        DBConnect db = DBConnect.getInstance();
         return db.getPhone(this.selectedBrand.getPhone_id());
     }
     /**

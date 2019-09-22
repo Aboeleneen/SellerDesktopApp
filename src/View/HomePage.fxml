@@ -10,7 +10,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="615.0" style="-fx-background-color: linear-gradient(black,white);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.HomePageController">
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="615.0" style="-fx-background-color: linear-gradient(black,white);" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.HomePageController">
    <children>
       <Text fx:id="brandname" fill="#ebebeb" layoutX="230.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Brand Name">
          <font>
@@ -19,27 +19,27 @@
       </Text>
       <AnchorPane layoutX="33.0" layoutY="78.0" prefHeight="401.0" prefWidth="555.0">
          <children>
-            <Button layoutX="439.0" layoutY="324.0" mnemonicParsing="false" onAction="#logout" prefHeight="65.0" prefWidth="113.0" style="-fx-background-color: black;" text="Logout" textFill="#f5f5f5">
+            <Button id="button" layoutX="439.0" layoutY="324.0" mnemonicParsing="false" onAction="#logout" prefHeight="65.0" prefWidth="113.0" text="Logout" textFill="#f5f5f5">
                <font>
                   <Font name="Bell MT Bold" size="18.0" />
                </font>
             </Button>
-            <Button layoutX="439.0" layoutY="248.0" mnemonicParsing="false" onAction="#contactCustomerService" prefHeight="65.0" prefWidth="113.0" style="-fx-background-color: black;" text="Contact" textFill="#f8f7f7">
+            <Button id="button" layoutX="439.0" layoutY="248.0" mnemonicParsing="false" onAction="#contactCustomerService" prefHeight="65.0" prefWidth="113.0" text="Contact" textFill="#f8f7f7">
                <font>
                   <Font name="Bell MT Bold" size="18.0" />
                </font>
             </Button>
-            <Button layoutX="439.0" layoutY="170.0" mnemonicParsing="false" onAction="#showProfile" prefHeight="65.0" prefWidth="113.0" style="-fx-background-color: black;" text="Profile" textFill="#eeeeee">
+            <Button id="button" layoutX="439.0" layoutY="170.0" mnemonicParsing="false" onAction="#showProfile" prefHeight="65.0" prefWidth="113.0" text="Profile" textFill="#eeeeee">
                <font>
                   <Font name="Bell MT Bold" size="18.0" />
                </font>
             </Button>
-            <Button layoutX="439.0" layoutY="94.0" mnemonicParsing="false" onAction="#showOrders" prefHeight="65.0" prefWidth="113.0" style="-fx-background-color: black;" text="Orders" textFill="#f8f3f3">
+            <Button id="button" layoutX="439.0" layoutY="94.0" mnemonicParsing="false" onAction="#showOrders" prefHeight="65.0" prefWidth="113.0" text="Orders" textFill="#f8f3f3">
                <font>
                   <Font name="Bell MT Bold" size="18.0" />
                </font>
             </Button>
-            <Button layoutX="439.0" layoutY="14.0" mnemonicParsing="false" onAction="#showProducts" prefHeight="65.0" prefWidth="113.0" style="-fx-background-color: black;" text="Products" textFill="#f2f2f2">
+            <Button id="button" layoutX="439.0" layoutY="14.0" mnemonicParsing="false" onAction="#showProducts" prefHeight="65.0" prefWidth="113.0" text="Products" textFill="#f2f2f2">
                <font>
                   <Font name="Bell MT Bold" size="17.0" />
                </font>

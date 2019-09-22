@@ -24,6 +24,7 @@ public class SellerDesktopApp extends Application {
         Scene scene = new Scene(root);
         
         stage.setScene(scene);
+        stage.setTitle("SellerDesktopApp");
         stage.show();
     }
 

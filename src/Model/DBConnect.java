@@ -18,14 +18,14 @@ import javafx.collections.ObservableList;
  *
  * @author Lenovo
  */
-public class DBConnection {
+public class DBConnect {
     
     private Connection con;
     private ResultSet rs;
     private Statement st;
-    private static DBConnection DBConnectInstance;
+    private static DBConnect DBConnectInstance;
     
-    private DBConnection(){
+    private DBConnect(){
     try{
             Class.forName("com.mysql.jdbc.Driver");
             con =  DriverManager.getConnection("jdbc:mysql://localhost:3306/closet", "root", "");
@@ -40,9 +40,9 @@ public class DBConnection {
      * 
      * @return DBConnectInstance 
      */
-    public static DBConnection getInstance(){
+    public static DBConnect getInstance(){
        if(DBConnectInstance == null ){
-            DBConnectInstance = new DBConnection();
+            DBConnectInstance = new DBConnect();
             return DBConnectInstance;
         }else{
             return DBConnectInstance;

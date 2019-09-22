@@ -6,7 +6,7 @@
 package View;
 
 import Model.Brand;
-import Model.DBConnection;
+import Model.DBConnect;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
@@ -21,6 +21,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
 /**
@@ -76,7 +78,7 @@ public class LoginController implements Initializable {
      * call checkLogin function in database class
      */
     private Boolean check() throws SQLException{
-        DBConnection db = DBConnection.getInstance();
+        DBConnect db = DBConnect.getInstance();
         String user = this.username.getText();
         String pass = this.password.getText();
         return db.checkLogin(user, pass);
@@ -86,7 +88,7 @@ public class LoginController implements Initializable {
      * get brand object of current brand
      */
     private Brand getBrand() throws SQLException{
-        DBConnection db = DBConnection.getInstance();
+        DBConnect db = DBConnect.getInstance();
         return db.getBrand(this.username.getText(), this.password.getText());
     }
     
@@ -103,6 +105,32 @@ public class LoginController implements Initializable {
             Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
             window.setScene(scene);
             window.show();
+    }
+    
+     @FXML
+    public void clickEnter(KeyEvent event) throws IOException, SQLException{
+        if(event.getCode().equals(KeyCode.ENTER)){
+            // check the validation of username and password 
+     if(check()){
+            
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("HomePage.fxml"));
+            Parent homeView = loader.load();
+           
+            // pass data to home page scene
+            HomePageController controller = loader.getController();
+            controller.initData(this.getBrand());
+            
+            
+            Scene scene = new Scene(homeView);
+            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+            window.setScene(scene);
+            window.show();
+        }else{
+            this.errorMessage.setText("wrong username or password");
+        }
+        
+        }
     }
     
     

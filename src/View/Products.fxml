@@ -28,27 +28,27 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <Button layoutX="44.0" layoutY="336.0" mnemonicParsing="false" onAction="#dislay" prefHeight="27.0" prefWidth="110.0" style="-fx-background-color: black;" text="View Product" textFill="WHITE">
+      <Button id="button" layoutX="44.0" layoutY="336.0" mnemonicParsing="false" onAction="#dislay" prefHeight="27.0" prefWidth="110.0" stylesheets="@style.css" text="View Product" textFill="WHITE">
          <font>
             <Font name="Bell MT Bold" size="14.0" />
          </font></Button>
-      <Button layoutX="171.0" layoutY="336.0" mnemonicParsing="false" onAction="#deleteProduct" prefHeight="27.0" prefWidth="121.0" style="-fx-background-color: black;" text="Delete Product" textFill="WHITE">
+      <Button id="button" layoutX="171.0" layoutY="336.0" mnemonicParsing="false" onAction="#deleteProduct" prefHeight="27.0" prefWidth="121.0" stylesheets="@style.css" text="Delete Product" textFill="WHITE">
          <font>
             <Font name="Bell MT Bold" size="14.0" />
          </font></Button>
-      <Button layoutX="310.0" layoutY="336.0" mnemonicParsing="false" onAction="#editProduct" prefHeight="27.0" prefWidth="103.0" style="-fx-background-color: black;" text="Edit Product" textFill="WHITE">
+      <Button id="button" layoutX="310.0" layoutY="336.0" mnemonicParsing="false" onAction="#editProduct" prefHeight="27.0" prefWidth="103.0" stylesheets="@style.css" text="Edit Product" textFill="WHITE">
          <font>
             <Font name="Bell MT Bold" size="14.0" />
          </font></Button>
-      <Button layoutX="432.0" layoutY="336.0" mnemonicParsing="false" onAction="#addNewProduct" prefHeight="27.0" prefWidth="131.0" style="-fx-background-color: black;" text="Add New Product" textFill="WHITE">
+      <Button id="button" layoutX="432.0" layoutY="336.0" mnemonicParsing="false" onAction="#addNewProduct" prefHeight="27.0" prefWidth="131.0" stylesheets="@style.css" text="Add New Product" textFill="WHITE">
          <font>
             <Font name="Bell MT Bold" size="14.0" />
          </font></Button>
-      <Button layoutX="216.0" layoutY="387.0" mnemonicParsing="false" onAction="#goHome" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: black;" text="Home" textFill="WHITE">
+      <Button id="button" layoutX="216.0" layoutY="387.0" mnemonicParsing="false" onAction="#goHome" prefHeight="30.0" prefWidth="67.0" stylesheets="@style.css" text="Home" textFill="WHITE">
          <font>
             <Font name="Bell MT Bold" size="14.0" />
          </font></Button>
-      <Button layoutX="330.0" layoutY="387.0" mnemonicParsing="false" onAction="#logout" prefHeight="27.0" prefWidth="67.0" style="-fx-background-color: black;" text="Logout" textFill="WHITE">
+      <Button id="button" layoutX="330.0" layoutY="387.0" mnemonicParsing="false" onAction="#logout" prefHeight="27.0" prefWidth="67.0" stylesheets="@style.css" text="Logout" textFill="WHITE">
          <font>
             <Font name="Bell MT Bold" size="14.0" />
          </font></Button>

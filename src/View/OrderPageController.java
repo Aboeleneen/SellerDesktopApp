@@ -5,7 +5,7 @@
  */
 package View;
 
-import Model.DBConnection;
+import Model.DBConnect;
 import Model.Order;
 import Model.Product;
 import java.io.IOException;

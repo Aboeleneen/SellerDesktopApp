@@ -6,7 +6,7 @@
 package View;
 
 import Model.Brand;
-import Model.DBConnection;
+import Model.DBConnect;
 import Model.Product;
 import java.io.IOException;
 import java.net.URL;
@@ -118,7 +118,7 @@ public class EditProductController implements Initializable {
     public void save(ActionEvent event) throws SQLException, IOException{
             this.EditedProduct = getProduct();
             this.selectedBrand.getProducts().remove(selectedProduct);
-            DBConnection db = DBConnection.getInstance();
+            DBConnect db = DBConnect.getInstance();
             db.updateProduct(EditedProduct);
             this.selectedBrand.addNewProduct(EditedProduct);
             
@@ -153,7 +153,7 @@ public class EditProductController implements Initializable {
         product.setBrand_name(this.selectedBrand.getBrand_name());
         product.setProduct_id(selectedProduct.getProduct_id());
         // add image
-      //  DBConnection db  = DBConnection.getInstance();
+      //  DBConnect db  = DBConnect.getInstance();
       //  product.setImage_id(db.InsertImage(imageview.getImage().));
       
         

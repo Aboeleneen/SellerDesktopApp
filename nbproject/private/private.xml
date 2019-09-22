@@ -13,14 +13,12 @@
             <file>file:/D:/CSED/SellerDesktopApp/src/View/ForgotPasswordController.java</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/ProfileController.java</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/LoginController.java</file>
-            <file>file:/D:/CSED/SellerDesktopApp/src/View/OrderDetails.fxml</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/AddProductController.java</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/Model/Order.java</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/Model/Brand.java</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/EditProduct.fxml</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/style.css</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/Login.fxml</file>
-            <file>file:/D:/CSED/SellerDesktopApp/src/View/OrderDetailsController.java</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/ProductViewController.java</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/SellerDesktopApp.java</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/ProductsController.java</file>
@@ -30,9 +28,9 @@
             <file>file:/D:/CSED/SellerDesktopApp/src/View/ForgotPassword.fxml</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/AddProduct.fxml</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/Profile.fxml</file>
+            <file>file:/D:/CSED/SellerDesktopApp/src/Model/DBConnect.java</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/HomePage.fxml</file>
             <file>file:/D:/CSED/SellerDesktopApp/src/View/Products.fxml</file>
-            <file>file:/D:/CSED/SellerDesktopApp/src/Model/DBConnection.java</file>
         </group>
     </open-files>
 </project-private>
